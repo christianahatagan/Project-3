@@ -112,32 +112,27 @@
         
         <fieldset>
             <legend>Newsletter</legend>
+            <div class="rows">
+                    <label>Select the newsletters you would like to receive</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="html21" name="box">
+                        <label for="html21">HTML News</label>
+                        
+                        <input type="checkbox" id="css" name="box">
+                        <label for="css">CSS News</label>
+                        
+                        <input type="checkbox" id="java" name="box">
+                    </div>
 
-            <div class="form-group">
-                <label>Select the newsletters you would like to receive</label>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="html21" name="box">
-                    <label for="html21">HTML News</label>
-                    
-                    <input type="checkbox" id="css" name="box">
-                    <label for="css">CSS News</label>
-                    
-                    <input type="checkbox" id="java" name="box">
-                    <label for="java">Javascript News</label>
-                </div>
+                    <label>Newsletter format</label>
+                    <div class="radio-group">
+                        <input type="radio" id="html2" name="radio" value="html">
+                        <label for="html2">HTML</label>
+                        
+                        <input type="radio" id="plain" name="radio" value="plain">
+                        <label for="plain">Plain Text</label>
+                    </div>
             </div>
-
-            <div class="form-group">
-                <label>Newsletter format</label>
-                <div class="radio-group">
-                    <input type="radio" id="html2" name="radio" value="html">
-                    <label for="html2">HTML</label>
-                    
-                    <input type="radio" id="plain" name="radio" value="plain">
-                    <label for="plain">Plain Text</label>
-                </div>
-            </div>
-
             <div class="form-group">
                 <label for="bio">Other topics you'd like to hear about</label>
                 <textarea id="bio" name="user_bio"></textarea>

@@ -116,24 +116,23 @@ legend {
     max-width: 50%; /* Moved from 320px media query */
     align-self: auto; /* Ensures it aligns like other inputs */
 }
-
-.checkbox-group, .radio-group {
+.rows, .checkbox-group, .radio-group {
     display: flex;
-    align-items: flex-start; /* Aligns items vertically in the center */
-    flex-direction: column; /* Ensure inputs and labels are side by side */
-    margin-bottom: 0.5rem;
-}
-
-.checkbox-group label,
-.radio-group label {
-    margin-left: 0.5rem; /* Add some space between the input and label */
-    margin-bottom: 0; /* Remove any margin below the label */
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .checkbox-group input[type="checkbox"], .radio-group input[type="radio"] {
-    margin-right: 0.5rem;
-    margin-bottom: 0;
+    margin-right: 0.5rem; /* Adaugă un spațiu mic între checkbox/radio și eticheta textului */
+    margin-bottom: 0.5rem; /* Adaugă spațiu între fiecare checkbox/radio și următorul */
+    vertical-align: middle; /* Asigură alinierea verticală corectă */
 }
+
+.checkbox-group label, .radio-group label {
+    display: inline-block;
+    margin-bottom: 0.5rem; /* Adaugă spațiu între fiecare checkbox/radio și următorul */
+}
+
 
 
 legend{
@@ -220,6 +219,11 @@ textarea:focus,
     .radio-group input[type="radio"] {
         margin-right: 1rem;
     }
+    
+    #rows{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -246,7 +250,7 @@ textarea:focus,
     }
 
     .checkbox-group {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .checkbox-group input[type="checkbox"] {
@@ -254,10 +258,11 @@ textarea:focus,
     }
 
     .radio-group {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .radio-group input[type="radio"] {
         margin-right: 1rem;
     }
+
 }
