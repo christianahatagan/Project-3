@@ -133,6 +133,10 @@ legend {
     margin-bottom: 0.5rem; /* Adaugă spațiu între fiecare checkbox/radio și următorul */
 }
 
+.boxes{
+    display: flex;
+    flex-direction: rows;
+}
 
 
 legend{
