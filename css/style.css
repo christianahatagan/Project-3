@@ -142,7 +142,6 @@ legend {
 
 .boxes{
     display: flex;
-    flex-direction: rows;
 }
 
 
@@ -192,14 +191,10 @@ textarea:focus,
 
 /* Styles for tablet-sized screens and above */
 @media screen and (min-width: 768px) {
+    
     main, header{
         margin: 0 auto;
         max-width: 80%;
-    }
-
-    .form-group {
-        flex-direction: row;
-        align-items: center;
     }
 
     .form-group label {
@@ -221,17 +216,11 @@ textarea:focus,
         flex-basis: 30%;
     }
 
-    .checkbox-group {
-        flex-direction: row;
-    }
 
     .checkbox-group input[type="checkbox"] {
         margin-right: 1rem;
     }
 
-    .radio-group {
-        flex-direction: row;
-    }
 
     .radio-group input[type="radio"] {
         margin-right: 1rem;
