@@ -78,6 +78,7 @@ legend {
 }
 
 .form-group {
+    border:none;
     display: flex;
     flex-direction: column; /* Moved from 320px media query */
     margin-bottom: 0.5rem; /* Moved from 320px media query */
@@ -167,9 +168,6 @@ footer {
     font-size: 0.9rem; /* Moved from 320px media query */
 }
 
-.fieldset-border{
-    border-bottom: 3px double  black;
-}
 
 /* Focus styles */
 input:focus, 
