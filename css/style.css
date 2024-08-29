@@ -64,6 +64,13 @@ form {
     flex-direction: column;
 }
 
+hr {
+    border: 0;
+    height: 2px; /* Adjust the thickness of the line */
+    background: black; /* Dark color to match the top bar */
+    margin: 2rem 0; /* Add some spacing above and below the line */
+}
+
 fieldset {
     border: none;
     background-color: #f0f0f0;
