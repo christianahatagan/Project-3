@@ -167,6 +167,10 @@ footer {
     font-size: 0.9rem; /* Moved from 320px media query */
 }
 
+.fieldset-border{
+    border-bottom: 3px double  black;
+}
+
 /* Focus styles */
 input:focus, 
 textarea:focus {
@@ -184,6 +188,10 @@ textarea:focus,
 
 /* Styles for tablet-sized screens and above */
 @media screen and (min-width: 768px) {
+    main{
+        max-width: 80%;
+    }
+
     .form-group {
         flex-direction: row;
         align-items: center;
