@@ -37,7 +37,7 @@ header {
     text-align: center;
     padding: 1rem;
     background-color: #f0f0f0;
-    border-bottom: 3px double  #ddd;
+    border-bottom: 3px double  gray;
     padding: 0.5rem; /* Moved from 320px media query */
 }
 
@@ -186,7 +186,8 @@ textarea:focus,
 
 /* Styles for tablet-sized screens and above */
 @media screen and (min-width: 768px) {
-    main{
+    main, header{
+        margin: 0 auto;
         max-width: 80%;
     }
 
